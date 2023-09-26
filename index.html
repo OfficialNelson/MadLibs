@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mad Libs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <h1>Enjoy this MadLibs created by Nelson Kan</h1>
+    <img src = "https://www.madlibs.com/wp-content/themes/madlibs/assets/images/mdl_logo.png" width="20%" height="auto" alt="mad libs logo">
+    <p>Please enter the following information:</p>
+
+    <input id="pluralNoun" placeholder="a plural noun"><br>
+    <input id="noun1" placeholder="a noun"><br>
+    <input id="noun2" placeholder="another noun"><br>
+    <input id="song" placeholder="song"><br>
+    <input id="verb" placeholder="verb"><br>
+
+    <button id="submitButton" onclick="generateMadLib()">Submit</button>
+
+    <div id="result">
+        <h2>Your MadLib Story:</h2>
+        <p id="madLibOutput"></p>
+        <button id="goAgainButton" onclick="resetMadLib()">Go Again</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
